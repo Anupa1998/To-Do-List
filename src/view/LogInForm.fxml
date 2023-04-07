@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #3867d6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+   <children>
+      <Group layoutX="50.0" layoutY="276.0">
+         <children>
+            <Group>
+               <children>
+                  <Group>
+                     <children>
+                        <Group layoutX="-9.0">
+                           <children>
+                              <Group layoutX="10.0" layoutY="-8.0" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Label layoutX="57.0" layoutY="52.0" text="Login to To-Do List" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Cambria Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="38.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="38.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Password.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="305.0" onMouseClicked="#lblCreateNewAccountOnMouseClicked" text="Create New Account" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXTextField fx:id="txtUsrNm" alignment="CENTER" focusColor="WHITE" layoutX="60.0" layoutY="131.0" prefHeight="25.0" prefWidth="200.0" promptText="User Name" unFocusColor="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="110.0" layoutY="261.0" onAction="#btnLgnOnAction" prefWidth="81.0" ripplerFill="WHITE" style="-fx-background-color: ffffff;" text="Login">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPswrd" alignment="CENTER" focusColor="WHITE" layoutX="57.0" layoutY="185.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" unFocusColor="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

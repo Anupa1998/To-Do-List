@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="386.0" prefWidth="600.0" style="-fx-background-color: #3867d6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ToDoFormController">
+   <children>
+      <TextField fx:id="txtSlctdTD" layoutX="288.0" layoutY="97.0" prefHeight="25.0" prefWidth="290.0" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="440.0" layoutY="134.0" onAction="#bgnDltOnAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #eb4d4b;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="513.0" layoutY="134.0" onAction="#btnUpdtOnAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #badc58;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="454.0" layoutY="200.0" onAction="#btnAddnwtdOnAction" prefHeight="27.0" prefWidth="122.0" style="-fx-background-color: ffffff;" text="+Add New ToDo">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane fx:id="subRoot" layoutX="286.0" layoutY="250.0" prefHeight="107.0" prefWidth="290.0" style="-fx-border-color: ffffff; -fx-border-width: 2;">
+         <children>
+            <JFXTextField fx:id="txtDescription" focusColor="WHITE" layoutX="10.0" layoutY="11.0" prefHeight="27.0" prefWidth="273.0" promptText="Description" unFocusColor="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font></JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="193.0" layoutY="54.0" onAction="#adTLstOnAction" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #badc58;" text="Add To List" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="512.0" layoutY="29.0" onAction="#btnLgtOnAction" style="-fx-background-color: #badc58;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblUsrNm" layoutX="288.0" layoutY="34.0" text="Hi User Welcome to To Do List" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="286.0" layoutY="178.0" prefHeight="2.0" prefWidth="290.0" style="-fx-background-color: #ffffff;" />
+      <ListView fx:id="lsttd" layoutX="23.0" layoutY="32.0" prefHeight="324.0" prefWidth="249.0" style="-fx-border-color: ffffff; -fx-background-color: lsttd;" />
+   </children>
+</AnchorPane>

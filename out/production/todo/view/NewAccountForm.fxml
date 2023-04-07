@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #3867d6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewAccountController">
+   <children>
+      <Label layoutX="58.0" layoutY="25.0" text="Create New Account" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" focusColor="WHITE" layoutX="55.0" layoutY="92.0" prefHeight="27.0" prefWidth="210.0" promptText="User Name" unFocusColor="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" focusColor="WHITE" layoutX="55.0" layoutY="149.0" prefHeight="27.0" prefWidth="210.0" promptText="E-Mail" unFocusColor="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtNewPassword" focusColor="WHITE" layoutX="55.0" layoutY="203.0" prefHeight="27.0" prefWidth="210.0" promptText="New Password" unFocusColor="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="txtConfirmPassword" focusColor="WHITE" layoutX="55.0" layoutY="257.0" prefHeight="27.0" prefWidth="210.0" promptText="Confirm Password" unFocusColor="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="31.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/mail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="31.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="31.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="31.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Password.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="322.0" onAction="#btnRegisterOnAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #ffffff;" text="Register">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblPswrdntmatch1" layoutX="123.0" layoutY="231.0" text="Password does not match" textFill="#e84118">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPswrdntmtch2" layoutX="124.0" layoutY="285.0" text="Password does not match" textFill="#e84118">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
